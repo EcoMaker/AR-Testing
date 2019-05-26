@@ -9,14 +9,29 @@
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'> 
     <! geändert von a-scene embedded arjs; debugUIEnabled: false nimmt die ganzen debuginfos raus>
 
-<!Marker setup>      
+<!Marker setup>    
+<!3D-Druck>      
         <a-marker preset="hiro">        
           
     <a-entity gltf-model="url(https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/Ausstellung/3D-Druck.gltf)"></a-entity>
       
           </a-marker> 
-      
-      <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/marker/test.patt'>       
+<!Fräsen>      
+      <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/marker/pattern-marker%20fräsen.patt'>       
+        
+            <a-entity gltf-model="url(https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/Ausstellung/Fräsen.gltf)"></a-entity>
+        
+      </a-marker> 
+
+<!Lasercutt>      
+      <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/marker/pattern-marker%20lasercut.patt'>       
+        
+            <a-entity gltf-model="url(https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/Ausstellung/Fräsen.gltf)"></a-entity>
+        
+      </a-marker> 
+
+<!Allgemein>      
+      <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/marker/allgemein.patt'>       
         
             <a-entity gltf-model="url(https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/Ausstellung/Fräsen.gltf)"></a-entity>
         
