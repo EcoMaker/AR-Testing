@@ -9,24 +9,12 @@
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'> 
     <! geändert von a-scene embedded arjs; debugUIEnabled: false nimmt die ganzen debuginfos raus>
 
-       <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/Ausstellung/Fräsen.gltf">
-        </a-asset-item>
-
-
-        <a-marker type='hiro'>
-            <a-entity
-                gltf-model="#animated-asset"
-                scale="1">
-            </a-entity>
-        </a-marker>
-
-
       
 <!Marker setup>    
 <!3D-Druck>      
         <a-marker preset="hiro">        
           
-    <!a-entity gltf-model="url(https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/Ausstellung/3D-Druck.gltf)"></a-entity>
+    <a-entity gltf-model="url(https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/Ausstellung/3D-Druck.gltf)"></a-entity>
       
           </a-marker> 
 <!Fräsen>      
