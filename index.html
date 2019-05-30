@@ -1,17 +1,23 @@
 <!doctype HTML>
 <html>
-    //test
+    <!einbinden von A-Frame>
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    
+    <!einbinden von AR.js>
     <script src="https://ecomaker.github.io/AR-Skripte/aframe-ar.min.js"></script>
-    <!script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script src="https://ecomaker.github.io/AR-Skripte/smoothing.js"></script>
+    
+    <!einbinden von einem Loader, der es ermöglicht andere Dateiformate einzubinden>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <!einbinden von einem Skript zur Reduktion von zittern>
+    <!script src="https://ecomaker.github.io/AR-Skripte/smoothing.js"></script>
     <body style='margin : 0px; overflow: hidden;'>
        
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
 
             
             
-            
+        <!Einbinden der Ausstellungsobjekte>    
         <a-assets>
             <!3D-Druck>
             <a-asset-item id="3D-Druck" src="https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/Ausstellung/3D-Druck_gedoppelt.gltf"></a-asset-item>
@@ -30,8 +36,8 @@
         </a-assets>
 
             
-            
-            
+           
+        <!Einbinden der Marker>
         <!3D-Druck>            
         <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/marker/3D-Druck.patt'>
             <a-entity
@@ -76,13 +82,13 @@
             
             
             
-        <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
+        <!Einbinden der Kamera>
         <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
 
-MIT License
+<!MIT License
 
 Original work Copyright (c) 2017 Jerome Etienne 
 Modified work Copyright (c) 2019 Markus Roos
@@ -103,5 +109,5 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. -->
+SOFTWARE.>
 
