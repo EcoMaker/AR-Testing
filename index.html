@@ -32,8 +32,9 @@
             <a-asset-item id="ecoDesign" src="https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/Ausstellung/ecoDesign_doppel.gltf"></a-asset-item>
             
             <!Einstieg>
-            <a-asset-item id="Allgemein" src="https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/Ausstellung/Einstieg_Mesh3.gltf"></a-asset-item>
+            <a-asset-item id="Einstieg" src="https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/Ausstellung/test.ply"></a-asset-item>
         </a-assets>
+            
 
             
            
@@ -73,10 +74,18 @@
         </a-marker> 
             
         <!Einstieg>    
+        <!a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/marker/Einstieg.patt'>
+            <!a-entity
+                id="animated-model"
+                gltf-model="#Einstieg">
+            <!/a-entity>
+        <!/a-marker> 
+            
+             <!Einstieg>    
         <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/EcoMaker/hosting-of-models/master/marker/Einstieg.patt'>
             <a-entity
                 id="animated-model"
-                gltf-model="#Allgemein">
+                ply-model="#Einstieg">
             </a-entity>
         </a-marker> 
             
